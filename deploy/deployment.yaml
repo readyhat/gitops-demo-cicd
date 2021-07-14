@@ -45,7 +45,7 @@ spec:
           failureThreshold: 3
           httpGet:
             path: /
-            port: 137
+            port: 1337
             scheme: HTTP
           initialDelaySeconds: 45
           periodSeconds: 10
