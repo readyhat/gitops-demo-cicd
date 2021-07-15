@@ -11,7 +11,7 @@ metadata:
     app.openshift.io/runtime: java
   name: sailsjs-gitops
 spec:
-  replicas: 2
+  replicas: 1
   selector:
     matchLabels:
       app: sailsjs-gitops
@@ -23,7 +23,7 @@ spec:
       containers:
       - name: sailsjs-gitops
         imagePullPolicy: Always
-        image: quay.io/readyhat/gitops-demo:v2
+        image: quay.io/readyhat/gitops-demo:v1
         livenessProbe:
           failureThreshold: 3
           httpGet:
