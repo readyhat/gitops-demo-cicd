@@ -23,7 +23,7 @@ spec:
       containers:
       - name: sailsjs-gitops
         imagePullPolicy: Always
-        image: quay.io/readyhat/gitops-demo:v1
+        image: quay.io/readyhat/gitops-demo:v2
         livenessProbe:
           failureThreshold: 3
           httpGet:
@@ -37,10 +37,6 @@ spec:
         ports:
         - containerPort: 1337
           protocol: TCP
-        # - containerPort: 8443
-        #   protocol: TCP
-        # - containerPort: 8778
-        #   protocol: TCP
         readinessProbe:
           failureThreshold: 3
           httpGet:
