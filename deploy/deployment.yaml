@@ -23,7 +23,7 @@ spec:
       containers:
       - name: sailsjs-gitops
         imagePullPolicy: Always
-        image: quay.io/readyhat/gitops-demo:v2
+        image: quay.io/readyhat/gitops-demo:v3
         livenessProbe:
           failureThreshold: 3
           httpGet:
